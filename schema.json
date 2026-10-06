@@ -1,0 +1,15 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Fall zur Risikoklassifizierung",
+  "type": "object",
+  "required": ["id", "beschreibung", "erwartete_klasse", "rechtsgrundlage", "begruendung", "schwierigkeit"],
+  "properties": {
+    "id": {"type": "string", "pattern": "^case_[0-9]{3}$"},
+    "beschreibung": {"type": "string", "minLength": 30},
+    "erwartete_klasse": {"enum": ["prohibited", "high", "limited", "minimal"]},
+    "rechtsgrundlage": {"type": "string"},
+    "begruendung": {"type": "string", "minLength": 20},
+    "schwierigkeit": {"enum": ["leicht", "mittel", "schwer"]}
+  },
+  "additionalProperties": false
+}

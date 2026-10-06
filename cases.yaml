@@ -1,0 +1,72 @@
+# Eigenformulierte, fiktive Anwendungsfaelle. Die erwartete Klasse stuetzt sich
+# auf den Text der Verordnung (EU) 2024/1689. Vor Veroeffentlichung gegen den
+# aktuellen Rechtsstand pruefen und von einer fachkundigen Person gegenlesen.
+- id: case_001
+  beschreibung: "Ein Unternehmen setzt ein System ein, das eingehende Bewerbungen automatisch bewertet und eine Rangliste fuer die Personalabteilung erstellt."
+  erwartete_klasse: high
+  rechtsgrundlage: "Art. 6 Abs. 2 i.V.m. Anhang III Nr. 4 Buchst. a"
+  begruendung: "Systeme zur Auswahl und zum Filtern von Bewerbungen im Beschaeftigungskontext sind in Anhang III als Hochrisiko gelistet."
+  schwierigkeit: leicht
+
+- id: case_002
+  beschreibung: "Ein Onlineshop betreibt auf seiner Website einen KI-Chatbot, der Kundenfragen zu Lieferzeiten und Retouren beantwortet."
+  erwartete_klasse: limited
+  rechtsgrundlage: "Art. 50 Abs. 1"
+  begruendung: "Systeme, die direkt mit Menschen interagieren, muessen kenntlich machen, dass es sich um KI handelt. Ein Hochrisiko-Bezug liegt nicht vor."
+  schwierigkeit: leicht
+
+- id: case_003
+  beschreibung: "Ein E-Mail-Dienst nutzt ein Modell, das eingehende Nachrichten als Spam markiert und in einen separaten Ordner sortiert."
+  erwartete_klasse: minimal
+  rechtsgrundlage: "Keine spezifische Pflicht aus Art. 5, Art. 6 oder Art. 50"
+  begruendung: "Der Anwendungsfall faellt weder unter verbotene Praktiken noch unter Anhang III oder Transparenzpflichten."
+  schwierigkeit: leicht
+
+- id: case_004
+  beschreibung: "Eine Bank bewertet mit einem KI-Modell die Kreditwuerdigkeit von Privatpersonen und lehnt Antraege bei niedrigem Score automatisch ab."
+  erwartete_klasse: high
+  rechtsgrundlage: "Anhang III Nr. 5 Buchst. b"
+  begruendung: "Die Bewertung der Kreditwuerdigkeit natuerlicher Personen ist als Hochrisiko gelistet."
+  schwierigkeit: mittel
+
+- id: case_005
+  beschreibung: "Ein Callcenter wertet per KI die Stimmen der Mitarbeitenden aus, um deren Emotionen waehrend der Gespraeche zu erkennen und in einem Dashboard fuer Vorgesetzte darzustellen."
+  erwartete_klasse: prohibited
+  rechtsgrundlage: "Art. 5 Abs. 1 Buchst. f"
+  begruendung: "Das Ableiten von Emotionen am Arbeitsplatz ist grundsaetzlich verboten. Ausnahmen gelten nur aus medizinischen oder Sicherheitsgruenden."
+  schwierigkeit: mittel
+
+- id: case_006
+  beschreibung: "Eine Stadtverwaltung vergibt anhand eines KI-Systems Punktzahlen an Einwohner, die aus sozialem Verhalten und Freizeitaktivitaeten abgeleitet werden, und knuepft daran den Zugang zu oeffentlichen Leistungen."
+  erwartete_klasse: prohibited
+  rechtsgrundlage: "Art. 5 Abs. 1 Buchst. c"
+  begruendung: "Soziale Bewertung durch oder im Auftrag oeffentlicher Stellen mit nachteiliger Behandlung ist verboten."
+  schwierigkeit: leicht
+
+- id: case_007
+  beschreibung: "Ein Zahlungsdienstleister setzt ein Modell ein, das auffaellige Kartentransaktionen erkennt und zur manuellen Pruefung an Mitarbeitende weiterleitet."
+  erwartete_klasse: minimal
+  rechtsgrundlage: "Anhang III Nr. 5 Buchst. b (Ausnahme fuer Betrugserkennung)"
+  begruendung: "Systeme zur Aufdeckung von Finanzbetrug sind von der Hochrisiko-Einstufung bei der Kreditwuerdigkeitspruefung ausgenommen."
+  schwierigkeit: schwer
+
+- id: case_008
+  beschreibung: "Eine Hochschule setzt waehrend Online-Pruefungen eine Software ein, die per Kamera auffaelliges Verhalten der Studierenden erkennt und Taeuschungsverdacht meldet."
+  erwartete_klasse: high
+  rechtsgrundlage: "Anhang III Nr. 3 Buchst. d"
+  begruendung: "KI zur Ueberwachung und Erkennung unzulaessigen Verhaltens bei Pruefungen ist im Bildungsbereich als Hochrisiko gelistet."
+  schwierigkeit: mittel
+
+- id: case_009
+  beschreibung: "Eine Agentur erzeugt fuer eine Werbekampagne ein realistisch wirkendes Video, in dem eine real existierende Person Aussagen macht, die sie nie getroffen hat, und veroeffentlicht es."
+  erwartete_klasse: limited
+  rechtsgrundlage: "Art. 50 Abs. 4"
+  begruendung: "Wer Deepfakes erzeugt oder verbreitet, muss offenlegen, dass die Inhalte kuenstlich erzeugt oder manipuliert wurden. Weitere Rechtsfragen (Persoenlichkeitsrecht) liegen ausserhalb der KI-Verordnung."
+  schwierigkeit: schwer
+
+- id: case_010
+  beschreibung: "Ein Handelsunternehmen prognostiziert mit einem Modell den Lagerbestand je Filiale und schlaegt Nachbestellmengen vor."
+  erwartete_klasse: minimal
+  rechtsgrundlage: "Keine spezifische Pflicht aus Art. 5, Art. 6 oder Art. 50"
+  begruendung: "Der Anwendungsfall betrifft weder Grundrechte-relevante Bereiche des Anhangs III noch Transparenzpflichten."
+  schwierigkeit: leicht
