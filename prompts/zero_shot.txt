@@ -1,0 +1,13 @@
+Ordne den folgenden KI-Anwendungsfall nach der Verordnung (EU) 2024/1689 (EU AI Act) einer Risikoklasse zu.
+
+Moegliche Klassen:
+- prohibited: verbotene Praxis
+- high: Hochrisiko-KI-System
+- limited: Transparenzpflichten
+- minimal: keine spezifischen Pflichten
+
+Antworte ausschliesslich mit JSON im Format:
+{"klasse": "<prohibited|high|limited|minimal>", "begruendung": "<kurze Begruendung mit Rechtsgrundlage>"}
+
+Anwendungsfall:
+{beschreibung}
