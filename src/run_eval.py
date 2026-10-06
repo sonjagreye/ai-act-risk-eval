@@ -57,7 +57,7 @@ def modell_anthropic(prompt, model, **_):
 
     client = anthropic.Anthropic(**kwargs)
     antwort = client.messages.create(
-        model=model, max_tokens=400,
+        model=model, max_tokens=1200,
         messages=[{"role": "user", "content": prompt}],
     )
 
