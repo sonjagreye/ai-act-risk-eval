@@ -60,7 +60,18 @@ def modell_anthropic(prompt, model, **_):
         model=model, max_tokens=400,
         messages=[{"role": "user", "content": prompt}],
     )
-    return antwort.content[0].text
+
+    # Neuere Claude-Modelle koennen vor dem eigentlichen Text zusaetzliche
+    # Content-Bloecke (z. B. ThinkingBlock) liefern. Fuer die Auswertung werden
+    # nur Text-Bloecke zusammengefuehrt.
+    text_bloecke = [
+        block.text
+        for block in antwort.content
+        if getattr(block, "type", None) == "text" and getattr(block, "text", None)
+    ]
+    if not text_bloecke:
+        raise ValueError("Anthropic-Antwort enthielt keinen Text-Block.")
+    return "\n".join(text_bloecke)
 
 
 PROVIDER = {"mock": modell_mock, "anthropic": modell_anthropic}
