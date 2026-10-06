@@ -39,7 +39,7 @@ Rohantworten und Zusammenfassung landen in `results/raw/` (nicht versioniert). A
 
 ## Ergebnisse
 
-_Noch ausstehend. Hier Tabelle und Diagramm je Modell und Prompt-Variante eintragen, mit Datum, Modellversion und Anzahl der Laeufe._
+
 
 ## Grenzen
 
