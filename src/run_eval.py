@@ -2,10 +2,11 @@
 
 Beispiele:
   python src/run_eval.py --provider mock
-  ANTHROPIC_API_KEY=... python src/run_eval.py --provider anthropic --model <modellname> --runs 3
+  ANTHROPIC_API_KEY=... ANTHROPIC_WORKSPACE_ID=... python src/run_eval.py --provider anthropic --model <modellname> --runs 3
 """
 import argparse
 import json
+import os
 import re
 import sys
 from datetime import datetime, timezone
@@ -48,7 +49,13 @@ def modell_mock(prompt, **_):
 
 def modell_anthropic(prompt, model, **_):
     import anthropic  # optionale Abhaengigkeit
-    client = anthropic.Anthropic()
+
+    workspace_id = os.getenv("ANTHROPIC_WORKSPACE_ID")
+    kwargs = {}
+    if workspace_id:
+        kwargs["default_headers"] = {"anthropic-workspace-id": workspace_id}
+
+    client = anthropic.Anthropic(**kwargs)
     antwort = client.messages.create(
         model=model, max_tokens=400,
         messages=[{"role": "user", "content": prompt}],
