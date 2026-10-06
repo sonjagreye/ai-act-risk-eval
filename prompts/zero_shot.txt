@@ -6,8 +6,10 @@ Moegliche Klassen:
 - limited: Transparenzpflichten
 - minimal: keine spezifischen Pflichten
 
-Antworte ausschliesslich mit JSON im Format:
+Antworte ausschliesslich mit gueltigem JSON im Format:
 {"klasse": "<prohibited|high|limited|minimal>", "begruendung": "<kurze Begruendung mit Rechtsgrundlage>"}
+
+Die Begruendung darf maximal 2 Saetze und hoechstens 80 Woerter enthalten. Gib keinen Text ausserhalb des JSON-Objekts aus.
 
 Anwendungsfall:
 {beschreibung}
